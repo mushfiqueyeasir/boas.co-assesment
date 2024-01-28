@@ -3,18 +3,11 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "cross-env NODE_ENV=dev next dev",
-        "build:dev": "cross-env NODE_ENV=dev next build",
-        "start:dev": "cross-env NODE_ENV=dev next start",
-        "stage": "cross-env NODE_ENV=stage next dev",
-        "build:stage": "cross-env NODE_ENV=stage next build",
-        "start:stage": "cross-env NODE_ENV=stage next start",
-        "prod": "cross-env NODE_ENV=prod next dev",
-        "build:prod": "cross-env NODE_ENV=prod next build",
-        "start:prod": "cross-env NODE_ENV=prod next start",
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
         "lint": "next lint",
-        "format": "prettier --write .",
-        "depcheck": "npx depcheck --skip-missing --ignores depcheck,autoprefixer,prettier-plugin-tailwindcss,postcss"
+        "format": "prettier --write ."
     },
     "dependencies": {
         "@mdx-js/loader": "^2.3.0",
