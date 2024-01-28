@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: "*",
             allow: "/"
         },
-        sitemap: `https://boas.co/sitemap.xml`,
-        host: `https://boas.co/`
+        sitemap: `https://boas-co.vercel.app/sitemap.xml`,
+        host: `https://boas-co.vercel.app/`
     };
 }
