@@ -1,6 +1,6 @@
 import React from "react";
 
-const BannerThumbnail = () => {
+const BannerThumbnail = ({hours,minutes,seconds}) => {
     const containerStyle = {
         backgroundImage:
             'linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("/images/banner/bannerImage.jpg")',
@@ -34,21 +34,21 @@ const BannerThumbnail = () => {
                     <div className="flex w-[60%] gap-[1.28rem] font-bold md:gap-10">
                         <div className="flex max-w-[4.8rem] flex-col items-center">
                             <span className=" flex w-full justify-center border-x-0 border-b-2 border-t-0  py-2 px-3 text-base  shadow-lg  md:text-xl md:leading-[5rem] xl:py-2 xl:text-[2rem] ">
-                                12
+                                {hours}
                             </span>
-                            <p className="text-cente text-xs font-medium leading-[1.875rem]">hours</p>
+                            <p className="text-center text-xs font-medium leading-[1.875rem]">hours</p>
                         </div>
                         <div className="flex max-w-[4.8rem] flex-col items-center">
                             <span className=" flex w-full justify-center border-x-0 border-b-2 border-t-0  py-2 px-3 text-base  shadow-lg  md:text-xl md:leading-[5rem] xl:py-2 xl:text-[2rem] ">
-                                31
+                                {minutes}
                             </span>
-                            <p className="text-cente text-xs font-medium leading-[1.875rem]">minutes</p>
+                            <p className="text-center text-xs font-medium leading-[1.875rem]">minutes</p>
                         </div>
                         <div className="flex max-w-[4.8rem] flex-col items-center">
                             <span className=" flex w-full justify-center border-x-0 border-b-2 border-t-0  py-2 px-3 text-base  shadow-lg  md:text-xl md:leading-[5rem] xl:py-2 xl:text-[2rem] ">
-                                10
+                                {seconds}
                             </span>
-                            <p className="text-cente text-xs font-medium leading-[1.875rem]">seconds</p>
+                            <p className="text-center text-xs font-medium leading-[1.875rem]">seconds</p>
                         </div>
                     </div>
                 </div>

@@ -10,9 +10,9 @@ const ProductSlider = ({ title, data, bg }: { title: string; data: any; bg?: boo
     console.log(data[0].attributes["brandImage" || "productImage"]);
     return (
         <section className={`${bg && "bg-secondary"} py-10`}>
-            <div className="container">
-                <h1 className="text-2xl font-medium md:pl-10 lg:pl-5  xl:text-3xl">{title}</h1>
-                <div className="pt-5">
+            <div className="container px-0 md:px-4">
+                <h1 className="text-2xl font-medium pl-2 md:pl-10 lg:pl-5  xl:text-3xl">{title}</h1>
+                <div className="pt-2">
                     <Slider {...settings}>
                         {data.map((item, index) => (
                             <div key={index} className=" ">
