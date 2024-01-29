@@ -12,6 +12,8 @@ import LevisJeans from "@/components/MarketingUI/LevisJeans";
 import Profits from "@/components/MarketingUI/Profits";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Collection from "@/components/Collection/Collection";
+import SaveJeans from "@/components/MarketingUI/SaveJeans";
+import Saves from "@/components/MarketingUI/Saves";
 
 export const metadata = generateMetadata(SeoContent.baseSeo);
 
@@ -30,7 +32,9 @@ export default async function HomePage() {
             <Explore/>
             <Collection/>
             <APP/>
-            <LevisJeans/>            
+            <LevisJeans/> 
+            <SaveJeans/>
+            <Saves/>           
             <Profits/>
         </>
     );
