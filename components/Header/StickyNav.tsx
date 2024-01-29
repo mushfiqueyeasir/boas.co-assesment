@@ -1,14 +1,12 @@
 import menuData from "@/content/menuData";
 import React from "react";
 
-const StickyNav = ({ isSticky }: { isSticky: boolean }) => {
+const StickyNav = () => {
     return (
         <nav
-            className={`${
-                isSticky ? "fixed top-0 z-[99] pt-4" : "relative"
-            } hidden w-full bg-white shadow-md duration-500 md:block`}
+            className={`sticky top-0 z-[99] hidden w-full bg-white shadow-md md:block`}
         >
-            <div className=" hidden justify-center gap-4 pt-3 md:flex lg:gap-[3%] xl:justify-center xl:gap-5">
+            <div className=" hidden justify-center gap-4 pt-6 md:flex lg:gap-[3%] xl:justify-center xl:gap-5">
                 {menuData.map((item, index) => (
                     <div key={0} className="dropdown-hover dropdown hidden hover:underline md:block ">
                         <div tabIndex={index} role="button" className="pb-3 font-medium lg:text-xl">
