@@ -10,6 +10,8 @@ import APP from "@/components/MarketingUI/APP";
 import News from "@/components/MarketingUI/News";
 import LevisJeans from "@/components/MarketingUI/LevisJeans";
 import Profits from "@/components/MarketingUI/Profits";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import Collection from "@/components/Collection/Collection";
 
 export const metadata = generateMetadata(SeoContent.baseSeo);
 
@@ -22,11 +24,13 @@ export default async function HomePage() {
             <Banner />
             <ProductSlider title="Popular brands" data={brands.data} bg />
             <NewJeans/>
+            <HowItWorks/>
             <News/>
             <ProductSlider title="Shop by fit" data={products.data} />
             <Explore/>
-            <LevisJeans/>
+            <Collection/>
             <APP/>
+            <LevisJeans/>            
             <Profits/>
         </>
     );
