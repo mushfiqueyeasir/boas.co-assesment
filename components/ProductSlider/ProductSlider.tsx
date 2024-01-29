@@ -19,8 +19,7 @@ const ProductSlider = ({ title, data, bg }: { title: string; data: any; bg?: boo
                                 <ProductCard
                                     data={item.attributes}
                                     image={
-                                        item.attributes.brandImage?.data.attributes.url ||
-                                        item.attributes.productImage?.data.attributes.url
+                                        item.attributes.image?.data.attributes.url 
                                     }
                                 />
                             </div>

@@ -14,12 +14,16 @@ import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import Collection from "@/components/Collection/Collection";
 import SaveJeans from "@/components/MarketingUI/SaveJeans";
 import Saves from "@/components/MarketingUI/Saves";
+import Featured from "@/components/Featured/Featured";
+import Blogs from "@/components/Blogs/Blogs";
 
 export const metadata = generateMetadata(SeoContent.baseSeo);
 
 export default async function HomePage() {
     const brands = await getData({ endPoint: "brands" });
     const products = await getData({ endPoint: "products" });
+    const featured = await getData({ endPoint: "featureds" });
+    const blogs = await getData({ endPoint: "blogs" });
 
     return (
         <>
@@ -36,6 +40,8 @@ export default async function HomePage() {
             <SaveJeans/>
             <Saves/>           
             <Profits/>
+            <Featured data={featured.data}/>
+            <Blogs  data={blogs.data}/>
         </>
     );
 }

@@ -6,10 +6,10 @@ const Saves = () => {
         <section className="mb-10 px-4 lg:px-28 ">
             <div className="mx-auto max-w-[1500px]">
                 <div className="space-y-4 ">
-                    <h2 className="font-medium leading-[1.875rem] lg:text-xl lg:leading-9">
+                    <h2 className="font-medium leading-[1.875rem] text-lg lg:text-xl lg:leading-9">
                         Buying just one pair of vintage jeans saves
                     </h2>
-                    <div className="grid grid-cols-2 grid-rows-2 gap-4 text-white lg:grid-cols-4 lg:grid-rows-1">
+                    <div className="grid grid-cols-2 md:grid-cols-4  gap-4 text-white   ">
                         <div className="bg-primary bg-op flex aspect-square max-w-xs flex-col items-center justify-center gap-2 bg-opacity-100 text-center xl:gap-8">
                             <img
                                 alt=""

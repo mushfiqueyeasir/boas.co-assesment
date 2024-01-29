@@ -62,10 +62,10 @@ export const settings2 = {
     dots: true,
     infinite: true,
     speed: 1500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     initialSlide: 0,
-    autoplay: true, // Enable autoplay
+    autoplay: false, // Enable autoplay
     autoplaySpeed: 5000, // Set the autoplay speed in milliseconds
     nextArrow: <CustomButton direction="next" />,
     prevArrow: <CustomButton direction="prev" />,
@@ -74,8 +74,8 @@ export const settings2 = {
         {
             breakpoint: 1080,
             settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToShow: 6,
+                slidesToScroll: 6,
                 infinite: true,
                 dots: true
             }
@@ -83,7 +83,7 @@ export const settings2 = {
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 3,
                 initialSlide: 2
             }
@@ -91,7 +91,7 @@ export const settings2 = {
         {
             breakpoint: 767,
             settings: {
-                slidesToShow: 1.2,
+                slidesToShow: 2.3,
                 slidesToScroll: 1,
                 arrows: false
             }

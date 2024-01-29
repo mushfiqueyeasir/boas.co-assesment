@@ -4,7 +4,7 @@ import React from "react";
 
 const Collection = () => {
     return (
-        <section className="  bg-[#98BCE3] py-10 pr-4 md:py-8 lg:pr-0">
+        <section className="  bg-[#98BCE3] py-10 p-4 md:py-8 lg:pr-0">
             <div className="mx-auto max-w-[1500px]">
                 <div className="flex flex-col gap-6 px-2 py-2 md:px-0 md:py-6">
                     <h1 className="text-xl text-black md:text-white lg:px-28">Iconic Levi’s collections</h1>

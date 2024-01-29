@@ -3,9 +3,9 @@ import React from "react";
 
 const SaveJeans = () => {
     return (
-        <section className="mb-10 px-4 md:px-0  lg:pr-0 ">
+        <section className="mb-10 px-4   lg:pr-0 ">
             <div className="mx-auto max-w-[1500px]">
-                <div className="flex flex-col gap-10 lg:flex-row ">
+                <div className="flex flex-col items-center gap-10 lg:flex-row ">
                     <div className="flex flex-col  gap-4 lg:py-20">
                         <h6 className="text-xl font-medium lg:text-3xl">Save Jeans. Save Lives. </h6>
                         <p className="text-sm leading-6 lg:leading-8">
@@ -23,7 +23,7 @@ const SaveJeans = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="relative h-60 w-auto lg:h-auto lg:w-full ">
+                    <div className="relative h-60 w-auto lg:h-auto lg:w-full overflow-hidden  ">
                         <img
                             alt=""
                             className="object-cover"
